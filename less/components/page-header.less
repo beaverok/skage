@@ -1,0 +1,46 @@
+.page-header {
+  height: 393px;
+  margin-bottom: 75px;
+
+  &__inner {
+    .container();
+    .relative();
+  }
+
+    &__logo {
+      display: block;
+      .relative();
+      top: 26px;
+      margin: 0 auto 92px;
+      .align-center();
+    }
+    &__title {
+      max-width: 655px;
+      margin: 0 auto 46px;
+      .font-family(@font-bold);
+      .font-size(3.6rem,normal);
+      .align-center();
+    }
+    &__subtitle {
+      max-width: 545px;
+      margin: 0 auto 34px;
+      .font-family(@font-reg);
+      .font-size(1.8rem,normal);
+      .align-center();
+    }
+    &__discount {
+      .absolute();
+      top: 7px;
+      right: 0;
+      .size(122px,51px);
+      .bg-image("../img/bg_discount.png");
+      .align-center();
+    }
+      &__discount a {
+        padding-left: 22px;
+        .font-family(@font-reg);
+        .font-size(1.1rem,51px);
+        color: @color;
+        .no-decor();
+      }
+}

@@ -1,0 +1,61 @@
+/* базовые установки цвета */
+@color: #000;
+
+@yellow: #f6ff00;
+@grey: #5c5c5c;
+@white: #fff;
+
+@text-color: @color;
+@headings-color: @color;
+
+@link-color: #0088CC;
+@link-color--hover: darken(@link-color,15%);
+
+@border-color: @color;
+@border-color--hover: #3498DB;
+
+/* базовые установки шрифта */
+@font-face {
+  font-family: 'lato_regular';
+  src: url('../font/lato/lato-regular.eot');
+  src: url('../font/lato/lato-regular.eot?#iefix') format('embedded-opentype'),
+  url('../font/lato/lato-regular.woff') format('woff'),
+  url('../font/lato/lato-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lato_bold';
+  src: url('../font/lato/lato-bold.eot');
+  src: url('../font/lato/lato-bold.eot?#iefix') format('embedded-opentype'),
+  url('../font/lato/lato-bold.woff') format('woff'),
+  url('../font/lato/lato-bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@html-size-base: 10px;
+@font-size: 1.3rem;
+@font-size--small: 1.1rem;
+
+@line-height: 1.4;
+
+@headings-weight: 600;
+@headings-line-height: 1.2;
+
+@font-size--h1: 5.5rem;
+@font-size--h2: 3rem;
+@font-size--h3: 2.5rem;
+@font-size--h4: 2.1rem;
+@font-size--h5: @font-size;
+@font-size--h6: @font-size;
+
+@font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family--headings: @font-family;
+
+@font-reg: "lato_regular", Helvetica, Arial, sans-serif;
+@font-bold: "lato_bold", Helvetica, Arial, sans-serif;
+
+/* прочее */
+@container: 1182px;

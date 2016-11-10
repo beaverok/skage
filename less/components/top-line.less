@@ -1,0 +1,24 @@
+.top-line {
+  .size(100%,41px);
+  .bg-color(@color);
+
+  &__inner {
+    .container();
+    .relative();
+  }
+    &__address {
+      .absolute();
+      .pos();
+      .font-family(@font-reg);
+      .font-size(1.3rem,41px);
+      color: #efefef;
+    }
+    &__phone {
+      .absolute();
+      top: 0;
+      right: 0;
+      .font-family(@font-reg);
+      .font-size(1.3rem,41px);
+      color: #efefef;
+    }
+}

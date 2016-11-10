@@ -1,0 +1,344 @@
+/**
+ * Global Reset of all HTML Elements
+ */
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html,
+body {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+div,
+span,
+object,
+iframe,
+img,
+table,
+caption,
+thead,
+tbody,
+tfoot,
+tr,
+tr,
+td,
+article,
+aside,
+canvas,
+details,
+figure,
+hgroup,
+menu,
+nav,
+footer,
+header,
+section,
+summary,
+mark,
+audio,
+video {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cit,
+code,
+del,
+dfn,
+em,
+ins,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+b,
+i,
+hr,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+legend,
+label {
+  border: 0;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+canvas,
+figure,
+figure img,
+figcaption,
+hgroup,
+footer,
+header,
+nav,
+section,
+audio,
+video {
+  display: block;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+table caption,
+table th,
+table td {
+  text-align: left;
+  vertical-align: middle;
+}
+a {
+  cursor: pointer;
+}
+a img {
+  border: 0;
+}
+:focus {
+  outline: 0;
+}
+/* базовые установки цвета */
+/* базовые установки шрифта */
+@font-face {
+  font-family: 'lato_regular';
+  src: url('../font/lato/lato-regular.eot');
+  src: url('../font/lato/lato-regular.eot?#iefix') format('embedded-opentype'), url('../font/lato/lato-regular.woff') format('woff'), url('../font/lato/lato-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'lato_bold';
+  src: url('../font/lato/lato-bold.eot');
+  src: url('../font/lato/lato-bold.eot?#iefix') format('embedded-opentype'), url('../font/lato/lato-bold.woff') format('woff'), url('../font/lato/lato-bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+/* прочее */
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/* миксы для шрифта и текста */
+/* миксы для ссылок */
+/* миксы для списков */
+/* фоны */
+/* разное */
+/* положение блока */
+.top-line {
+  width: 100%;
+  height: 41px;
+  background-color: #000;
+}
+.top-line__inner {
+  width: 1182px;
+  margin: 0 auto;
+  clear: both;
+  position: relative;
+}
+.top-line__address {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "lato_regular", Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 41px;
+  color: #efefef;
+}
+.top-line__phone {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: "lato_regular", Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 41px;
+  color: #efefef;
+}
+.main-menu {
+  max-width: 385px;
+  margin: 0 auto;
+  text-align: center;
+}
+.main-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main-menu__item {
+  display: inline-block;
+  margin-right: 31px;
+}
+.main-menu__item:last-child {
+  margin-right: 0;
+}
+.main-menu__link {
+  display: inline-block;
+  padding: 0;
+  font-family: "lato_regular", Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 41px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.main-menu__link:hover {
+  color: #f6ff00;
+}
+.page-header {
+  height: 393px;
+  margin-bottom: 75px;
+}
+.page-header__inner {
+  width: 1182px;
+  margin: 0 auto;
+  clear: both;
+  position: relative;
+}
+.page-header__logo {
+  display: block;
+  position: relative;
+  top: 26px;
+  margin: 0 auto 92px;
+  text-align: center;
+}
+.page-header__title {
+  max-width: 655px;
+  margin: 0 auto 46px;
+  font-family: "lato_bold", Helvetica, Arial, sans-serif;
+  font-size: 3.6rem;
+  line-height: normal;
+  text-align: center;
+}
+.page-header__subtitle {
+  max-width: 545px;
+  margin: 0 auto 34px;
+  font-family: "lato_regular", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: normal;
+  text-align: center;
+}
+.page-header__discount {
+  position: absolute;
+  top: 7px;
+  right: 0;
+  width: 122px;
+  height: 51px;
+  background-image: url("../img/bg_discount.png");
+  text-align: center;
+}
+.page-header__discount a {
+  padding-left: 22px;
+  font-family: "lato_regular", Helvetica, Arial, sans-serif;
+  font-size: 1.1rem;
+  line-height: 51px;
+  color: #000;
+  text-decoration: none;
+}
+.scopes-block {
+  margin-bottom: 87px;
+}
+.scopes-block::after {
+  display: block;
+  content: '';
+  clear: both;
+}
+.scopes-block__inner {
+  width: 1182px;
+  margin: 0 auto;
+  clear: both;
+  position: relative;
+}
+.scopes-block__left-col {
+  width: 221px;
+  float: left;
+}
+.scopes-block__right-col {
+  width: 221px;
+  float: right;
+}
+.scopes-block__item {
+  margin-bottom: 60px;
+}
+.scopes-block__item--right {
+  text-align: right;
+}
+.scopes-block__item--left {
+  text-align: left;
+}
+.scopes-block__item-icon {
+  margin-bottom: 21px;
+}
+.scopes-block__item-title {
+  margin-bottom: 11px;
+  font-family: "lato_bold", Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: normal;
+  color: #000;
+}
+.scopes-block__item-text {
+  font-family: "lato_bold", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: normal;
+  color: #999;
+}
+.scopes-block__center-col {
+  width: 588px;
+  height: 477px;
+  position: absolute;
+  top: 42px;
+  left: 50%;
+  margin-left: -294px;
+  background-image: url("../img/bg_imac.png");
+  background-position: center 0;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.scopes-block__preview img {
+  width: 537px;
+  height: 303px;
+  position: relative;
+  top: 34px;
+  left: 0;
+}
+.page-footer {
+  width: 100%;
+  height: 41px;
+  background-color: #000;
+}
+.page-footer__inner {
+  width: 1182px;
+  margin: 0 auto;
+  clear: both;
+  position: relative;
+}
